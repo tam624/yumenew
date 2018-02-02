@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+    
+   <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+     <style>
+         
+         
+         #contents {
+            height:500px;
+            background-image:url('images/haikei.png');
+            background-size:380px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family:fantasy;
+        }
+        .bkRGBA{
+          /* 背景画像の透過用css */
+            height: 100%;
+            background: rgba(255,255,255,0.75);
+        }
+        #footer {
+            border-top:1px solid #eee;
+            box-shadow:2px -2px 5px 5px rgba(0,0,0,.1);
+            height:50px;
+        }
+        .cate-list  {
+            width:100%;
+            border:1px solid #000;
+            float:left;
+            list-style-type: none;
+            padding:5px;
+            box-sizing: border-box;
+            text-align:center;
+            
+        }
+        table {
+            margin:auto;
+        }
+        table, tr, td {
+            border:1px solid #000;
+            
+            
+        }
+        td {
+            width:200px;
+            padding:5px;
+            
+        }
+        #select {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <div class="bkRGBA">
+          <div class="cate-list" >
+            <table>
+                <tr><td><input type="checkbox" name="riyu" value="3">行動・感情</td><td><input type="checkbox" name="riyu" value="3">登場人物</td>
+                <tr><td><input type="checkbox" name="riyu" value="3">物</td><td><input type="checkbox" name="riyu" value="3">建物・場所</td>
+                <tr><td><input type="checkbox" name="riyu" value="3">人体</td><td><input type="checkbox" name="riyu" value="3">家具・家電 インテリア</td>
+                <tr><td><input type="checkbox" name="riyu" value="3">服装　アクセサリー</td><td><input type="checkbox" name="riyu" value="3">イベント・趣味</td>
+                <tr><td><input type="checkbox" name="riyu" value="3">風景・自然　気象</td><td><input type="checkbox" name="riyu" value="3">動物・生物</td>
+                <tr><td><input type="checkbox" name="riyu" value="3">植物・虫</td><td><input type="checkbox" name="riyu" value="3">乗り物・交通</td>
+                <tr><td><input type="checkbox" name="riyu" value="3">食物</td><td><input type="checkbox" name="riyu" value="3">色・数字・形</td>
+                <tr><td><input type="checkbox" name="riyu" value="3">未知な物</td><td><input type="checkbox" name="riyu" value="3">その他</td></tr>
+            </table>
+          </div>
+    <div id="select">
+        <input type="button" class="select" value="select">
+    </div>
+    </div>       
+        </div>
+</body>
+</html>                       
