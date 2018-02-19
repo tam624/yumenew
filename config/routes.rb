@@ -4,6 +4,5 @@ Rails.application.routes.draw do
   get 'top' => "home#top"
   get 'category' =>"category#index"
   get 'category/:l_category_id' => "category#mCategory"
-  get 'answer' => "home#answer"
-  get 'post' => "home#post"
+  get 'fortune/:keyword' => "fortune#index"
 end
