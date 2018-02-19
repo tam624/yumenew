@@ -3,6 +3,7 @@
         <div class="cate-list">
 
             <table>
+            <!--
                 <% @categories.each do |category| %>
                     <tr>
                         <td><input type="checkbox" name="riyu" value="<%=category.value%>">
@@ -10,6 +11,12 @@
                         </td>
                     </tr>
                     <% end %>
+            -->
+            <% @categories.each do |category| %>
+                <a href="/category/<%=category.id%>/">
+                    <button type="button" class="btn btn-secondary" style="opacity:0.5"><%=category.title%></button>
+                </a>
+            <% end %>
             </table>
         </div>
 
