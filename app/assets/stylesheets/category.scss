@@ -1,0 +1,52 @@
+ #contents {
+            height:500px;
+            background-image:url('/images/haikei.png');
+            background-size:380px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family:fantasy;
+            
+        }
+        .bkRGBA{
+          /* 背景画像の透過用css */
+            height: 100%;
+            background: rgba(255,255,255,0.75);
+        }
+        #footer {
+            border-top:1px solid #eee;
+            box-shadow:2px -2px 5px 5px rgba(0,0,0,.1);
+            height:50px;
+        }
+        .cate-list  {
+            height:100%;
+            width:100%;
+            border:1px solid #000;
+            float:left;
+            list-style-type: none;
+            padding:5px;
+            box-sizing: border-box;
+            text-align:center;
+            
+        }
+        table {
+            height:100%;
+            margin:auto;
+        }
+        table, tr, td {
+            border:1px solid #000;
+            
+            
+        }
+        td {
+            width:200px;
+            padding:5px;
+            
+        }
+        #select {
+            text-align:center;
+        }
+        
+        #back {
+            padding-top:30px;
+        }
+        

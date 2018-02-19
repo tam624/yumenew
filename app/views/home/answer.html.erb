@@ -1,79 +1,4 @@
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HOME</title>
-    
-    <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
-    
-     <style>
-     #contents {
-            height:500px;
-            background-image:url('images/haikei.png');
-            background-size:380px auto;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-family:fantasy;
-        }
-        .bkRGBA{
-          /* 背景画像の透過用css */
-            height: 100%;
-            background: rgba(255,255,255,0.9);
-        }
-        h1 {
-            font-size:40px;
-        }
-        p {
-            font-size:25px;
-        }
-        .box17{
-            text-align:left;
-            width:500px;
-            height:250px;
-            margin:auto;
-            position: relative;
-            padding: 0.5em 1.5em;
-            border-top: solid 2px black;
-            border-bottom: solid 2px black;
-        }
-        .box17:before, .box17:after{
-            content: '';
-            position: absolute;
-            top: -10px;
-            width: 2px;
-            height: -webkit-calc(100% + 20px);
-            height: calc(100% + 20px);
-            background-color: black;
-        }
-        .box17:before {left: 10px;}
-        .box17:after {right: 10px;}
-        .box17 p {
-        margin: 0; 
-        padding: 0;
-        }
-        
-        #answer {
-            padding-top:150px;
-        }
-        
-        .post {
-            margin:10px auto;
-            width:500px;
-        }
-        
-        .sled {
-            float:right;
-        }
 
-     </style>
-</head>
-     <body>
          <div id="contents">
            <div class="bkRGBA">
             
@@ -83,13 +8,12 @@
                 <p>甘えさせてくれたり、支えてくれる相手を求めているようです。あなたに恋人や結婚相手がいるなら、そういった部分を相手に求めているのでしょう。</p>
              </div>
               <div class="post">
-                  <input type="button" class="sled" value="スレッド" onclick="location.href='/post'" >
+                  <input type="button" class="btn btn-outline-secondary" value="スレッド" onclick="location.href='/post'" >
               </div>
             </div>
            </div>
           </div>
          <footer>
-        <input type="button" class="top" value="TOP" onclick="location.href='/top'"> 
+        <input type="button" class="btn btn-outline-secondary" value="TOP" onclick="location.href='/top'"> 
     </footer>
-     </body>
-</html>                       
+   

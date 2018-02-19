@@ -1,62 +1,15 @@
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HOME</title>
-    
-    <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
-    
-     <style>
-     #contents {
-            width:100%;
-            height:500px;
-            background-image:url('images/haikei.png');
-            background-size:380px auto;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-family:fantasy;
-        }
-    .bkRGBA{
-          /* 背景画像の透過用css */
-            height: 100%;
-            background: rgba(255,255,255,0.65);
-        }
-    textarea {
-        width:500px;
-        height:200px;
-    }
-    .box{
-        margin:auto;
-        text-align:center;
-        padding-top:60px;
-    }
-    
-    #post{
-        float:right;
-        width:500px;
-    }
-    
-    </style>
-     <div id="contents">
-         <div class="bkRGBA">
-         <div class="box">
-          <textarea>
+<div id="contents">
+    <div class="bkRGBA">
+        <div class="box">
+            <textarea>
              
           </textarea>
-         </div>
-         <div id="post">
-           <input type="button" class="post" value="投稿">
-         </div>
-         </div>
-         <div id="top">
-    <input type="button" class="back" value="top" onclick="location.href='/top'">
-    </di
-     </contents>
-</head>
-</html>
+        </div>
+        <div id="post">
+            <input type="button" class="btn btn-outline-secondary" value="投稿">
+        </div>
+    </div>
+    <div id="top">
+        <input type="button" class="btn btn-outline-secondary" value="top" onclick="location.href='/top'">
+    </div>
+</div>

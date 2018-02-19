@@ -1,0 +1,57 @@
+#contents {
+            height:500px;
+            background-image:url('images/haikei.png');
+            background-size:380px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family:fantasy;
+        }
+        .bkRGBA{
+          /* 背景画像の透過用css */
+            height: 100%;
+            background: rgba(255,255,255,0.9);
+        }
+        h1 {
+            font-size:40px;
+        }
+        p {
+            font-size:25px;
+        }
+        .box17{
+            text-align:left;
+            width:500px;
+            height:250px;
+            margin:auto;
+            position: relative;
+            padding: 0.5em 1.5em;
+            border-top: solid 2px black;
+            border-bottom: solid 2px black;
+        }
+        .box17:before, .box17:after{
+            content: '';
+            position: absolute;
+            top: -10px;
+            width: 2px;
+            height: -webkit-calc(100% + 20px);
+            height: calc(100% + 20px);
+            background-color: black;
+        }
+        .box17:before {left: 10px;}
+        .box17:after {right: 10px;}
+        .box17 p {
+        margin: 0; 
+        padding: 0;
+        }
+        
+        #answer {
+            padding-top:150px;
+        }
+        
+        .post {
+            margin:10px auto;
+            width:500px;
+        }
+        
+        .post .btn-outline-secondary {
+            float:right;
+        }
