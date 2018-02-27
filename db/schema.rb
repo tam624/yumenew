@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180202102807) do
+ActiveRecord::Schema.define(version: 20180219003007) do
 
   create_table "fortunes", force: :cascade do |t|
     t.integer "m_category_id", limit: 3,     null: false
@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20180202102807) do
 
   create_table "m_categories", force: :cascade do |t|
     t.integer "l_category_id", limit: 3,   null: false
-    t.string  "m_category_cd", limit: 255, null: false
     t.string  "title",         limit: 255, null: false
   end
 

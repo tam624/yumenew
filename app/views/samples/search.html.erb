@@ -1,0 +1,19 @@
+<div id="contents">
+    <div class="bkRGBA">
+        <div class="cate-list">
+            <div class="btn-group-vertical btn-group-lg category-button" role="group" aria-label="Basic example">
+            <% @mCategories.each do |category| %>
+                <a href="/fortune/<%=category.title%>/">
+                    <button type="button" class="btn btn-secondary" style="opacity:0.5"><%=category.title%></button>
+                </a>
+            <% end %>
+            </div>
+        </div>
+        <div id="select">
+            <input type="button" class="select" value="select">
+        </div>
+        <div id="top">
+            <input type="button" class="back" value="top" onclick="location.href='/top'">
+        </div>
+    </div>
+</div>

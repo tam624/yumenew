@@ -1,0 +1,23 @@
+<%=form_tag('/samples/search', method: 'get') do %>
+<div id="contents">
+    <div class="bkRGBA">
+        <div class="cate-list">
+            <div class="">
+            <% @categories.each do |category| %>
+                <label for="category_<%=category.id%>">
+                    <input type="checkbox" name="l_category_ids[]" id="category_<%=category.id%>" value="<%=category.id%>"><%=category.title%>
+                </label>
+            <% end %>
+            </div>
+        </div>
+        <div id="select">
+            <input type="submit" class="select" value="select">
+        </div>
+        <div id="top">
+            <a href="/top">
+                <input type="button" class="back" value="top" />
+            </a>
+        </div>
+    </div>
+</div>
+<% end %>
